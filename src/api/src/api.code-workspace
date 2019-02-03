@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "Ignite.API"
+		},
+		{
+			"path": "Ignite.API.Common"
+		},
+		{
+			"path": "Ignite.Data.UXO"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/bin": true,
+			"**/obj": true
+		}
+	}
+}

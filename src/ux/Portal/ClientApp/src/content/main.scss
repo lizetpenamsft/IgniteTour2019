@@ -1,0 +1,43 @@
+@import "variables.scss";
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  font-family: $primary-font-family;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    .navbar {
+        height: $navBarHeight;
+        background-color: $navBarBackgroundColor;
+        color: $navBarColor;
+
+        .navbar-brand {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 5px;
+            font-size: 24px;
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: transparent;
+            color: $navBarColor;
+        }
+    }
+
+    .app-body {
+        display: flex;
+        flex: 1;
+    }
+}
+
+.mapView {
+    flex: 1;
+}
