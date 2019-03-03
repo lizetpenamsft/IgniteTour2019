@@ -6,7 +6,7 @@ import App from "./app/App";
 import configureStore from "../stores/configureStore";
 import "../content/site.scss";
 import { initializeIcons } from "office-ui-fabric-react/lib/Icons";
-import { configureApiAuth, configureEsriAuthAsync } from "../services/APIGlobal";
+import { configureApiAuth } from "../services/APIGlobal";
 
 
 export function initialize() {

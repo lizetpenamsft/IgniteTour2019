@@ -8,6 +8,12 @@
 		},
 		{
 			"path": "Ignite.Data.UXO"
+		},
+		{
+			"path": "..\\..\\lib\\src\\Ignite.Common.Authentication"
+		},
+		{
+			"path": "..\\..\\lib\\src\\Ignite.Common.KeyVault"
 		}
 	],
 	"settings": {

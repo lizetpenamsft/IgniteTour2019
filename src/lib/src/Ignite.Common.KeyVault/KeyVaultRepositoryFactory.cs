@@ -36,7 +36,14 @@ namespace Ignite.Common.KeyVault
             var appId = configuration.GetConfiguration("KeyVault", "ADApplicationId");
             var thumbprint = configuration.GetConfiguration("KeyVault", "Thumbprint");
 
-            return new KeyVaultRepository(string.Format(VaultUrl, vault), appId, thumbprint);
+            if (!string.IsNullOrEmpty(thumbprint))
+            {
+                return new KeyVaultCertificateRepository(string.Format(VaultUrl, vault), appId, thumbprint);
+            }
+            else
+            {
+                return new KeyVaultMSIRepository(string.Format(VaultUrl, vault), appId);
+            }
         }
     }
 }

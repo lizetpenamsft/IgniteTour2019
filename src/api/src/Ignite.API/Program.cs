@@ -19,9 +19,11 @@ namespace Ignite.API
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .ConfigureLogging(logging => {
+                .ConfigureLogging(logging =>
+                {
                     logging.AddDebug();
                     logging.AddConsole();
+                    logging.AddAzureWebAppDiagnostics();
                 })
                 .UseStartup<Startup>();
     }
